@@ -1,0 +1,234 @@
+@font-face {
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
+    font-family: 'Nunito-Regular';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+}
+
+body {
+    font-family: 'Nunito-Regular';
+}
+
+
+/* MOBILE FIRST */
+
+header {
+    background-image: url(../images/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position-x: -290px;
+    border-bottom: 5px solid #a53e31f7;
+}
+
+header #layer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 20px 10px;
+    align-items: center;
+    background-color: rgba(165, 62, 49, 0.90);
+    color: white;
+}
+
+header p {
+    display: none;
+}
+
+header #logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header #logo img {
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin-top: 15px;
+}
+
+header #sociais {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 15px;
+}
+
+header h2 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+header #loja {
+    /* div */
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 15px;
+    /* border: 3px solid red; */
+}
+
+header #loja a {
+    width: 45%;
+    /* border: 3px solid red; */
+}
+
+header #loja a img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+
+/* section */
+
+#next-generation {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+#next-generation>p {
+    padding: 30px 50px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background-color: #B34334;
+}
+
+#next-generation article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    /* border: 2px solid green; */
+}
+
+#next-generation article i {
+    color: #B34334;
+    font-size: 32px;
+}
+
+#next-generation article h2 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+#next-generation article h3 {
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+#next-generation article p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/* TABLETS */
+
+@media screen and ( min-width: 768px) {
+    header {
+        background-size: 175%;
+        background-position-x: -450px;
+    }
+    header p {
+        display: block;
+        margin-top: 15px;
+        max-width: 580px;
+        font-size: 18px;
+    }
+    header #layer {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    header h1 {
+        font-size: 48px;
+    }
+    header #sociais {
+        max-width: 80px;
+    }
+    header #sociais i {
+        font-size: 20px;
+    }
+    header h2 {
+        font-size: 30px;
+        font-weight: 100;
+    }
+    header #loja {
+        margin-top: 30px;
+        max-width: 400px;
+    }
+    /* NEXT GENERATION */
+    /* section next-generation */
+    #next-generation>p {
+        font-size: 30px;
+    }
+    #next-generation article p {
+        width: 50%;
+    }
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px) {
+    header {
+        background-size: cover;
+        background-position-x: 0;
+    }
+    header #logo img {
+        width: 55px;
+    }
+    header #logo span {
+        font-size: 12px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    header #sociais {
+        margin-top: 5px;
+        max-width: 60px;
+    }
+    header #sociais i {
+        font-size: 12px;
+    }
+    header #layer {
+        background-color: transparent;
+    }
+    header h2 {
+        font-size: 16px;
+        /* border: 1px solid red; */
+        width: 50%;
+        align-self: flex-end;
+    }
+    header p {
+        /* border: 1px solid red; */
+        width: 30%;
+        margin-right: 20%;
+        align-self: flex-end;
+        font-size: 12px;
+    }
+    header #loja {
+        /* border: 1px solid red; */
+        align-self: flex-end;
+        width: 20%;
+        margin-right: 30%;
+    }
+    header #loja a img {
+        max-width: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #container {
+        max-width: 1200px;
+        margin: 0 auto;
+        /* border: 5px solid green; */
+    }
+}

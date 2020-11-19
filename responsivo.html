@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+
+    <style>
+        /* mobile first */
+        
+        body {
+            background-color: aquamarine;
+        }
+        
+        nav {
+            display: none;
+        }
+        
+        h1 {
+            text-align: center;
+            border: 1px solid black;
+        }
+        /* tablets >= 768px */
+        
+        @media screen and (min-width: 768px) {
+            h1 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 35px;
+            }
+        }
+        /* desktop */
+        
+        @media screen and (min-width: 992px) {
+            body {
+                background-color: salmon;
+            }
+            nav {
+                display: block;
+                border: 1px solid white;
+            }
+        }
+        /* telas largas */
+        
+        @media screen and (min-width: 1200px) {
+            #container {
+                margin: 0 auto;
+                max-width: 1200px;
+                border: 3px solid red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">QUEM SOMOS</a>
+        </nav>
+
+        <h1>Título do site</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui voluptatem accusamus possimus sapiente, temporibus asperiores ducimus corrupti amet eius vero voluptatum quas pariatur atque odio. Error necessitatibus quod facere?</p>
+
+
+    </div>
+
+</body>
+
+</html>
